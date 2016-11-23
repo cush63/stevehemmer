@@ -10,11 +10,9 @@
 
                    get_template_part( 'content', get_post_format() );
 
-                   if ( comments_open() || get_comments_number() ) :
-	                 comments_template();
-	endif;
           endwhile;
-               endif; ?>
+              endif; ?>
+
 
 
         </div><!-- /.blog-main -->
@@ -24,3 +22,12 @@
       </div><!-- /.row -->
 
    <?php get_footer(); ?>
+
+
+  <!---This won't enable my pagination buttons???
+   <nav>
+   <ul class="pager">
+   <li><?php next_posts_link( 'Previous' ); ?></li>
+   <li><?php previous_posts_link( 'Next' ); ?></li>
+   </ul>
+ </nav>-->
