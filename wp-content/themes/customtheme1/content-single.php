@@ -19,3 +19,7 @@
               <li><a href="#">Next</a></li>
             </ul>
           </nav>
+
+          <?php if ( has_post_thumbnail() ) {
+            the_post_thumbnail();
+          } ?>
